@@ -1,0 +1,55 @@
+* {
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+html,
+body {
+height: 100%;
+width: 100%;
+color: white;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+@property --borderRotate {
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 0deg;
+}
+
+
+@keyframes Rotate{
+    from{
+        --borderRotate: 0deg;
+    }
+    to{
+        --borderRotate: 360deg;
+    }
+}
+.card{
+    height: 300px;
+    width: 260px;
+    border: 5px solid rgba(255, 255, 255, 0);
+    text-align: center;
+    border-radius: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 0 30px rgb(233, 91, 114);
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(rgb(0, 0, 0)) padding-box,conic-gradient(from var(--borderRotate), black, black, rgb(233, 91, 114),black) border-box;
+    animation: Rotate  10s infinite;
+}
+
+.card img{
+    height: 200px;
+}
