@@ -35,7 +35,7 @@ body{
     }
 }
 .card{
-    height: 300px;
+    height: 310px;
     width: 260px;
     border: 5px solid rgba(255, 255, 255, 0);
     text-align: center;
@@ -43,10 +43,11 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    box-shadow: 0 0 30px rgb(233, 91, 114);
+    box-shadow: 0 0 50px rgb(111, 239, 72);
     align-items: center;
-    gap: 10px;
-    background: linear-gradient(rgb(0, 0, 0)) padding-box,conic-gradient(from var(--borderRotate), black, black, rgb(233, 91, 114),black) border-box;
+    gap: 6px;
+    padding: 12px 0px;
+    background: linear-gradient(rgb(0, 0, 0)) padding-box,conic-gradient(from var(--borderRotate), black, black,rgb(111, 239, 72),black) border-box;
     animation: Rotate  10s infinite;
 }
 
