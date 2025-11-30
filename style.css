@@ -35,7 +35,7 @@ body{
     }
 }
 .card{
-    height: 310px;
+    height: 320px;
     width: 260px;
     border: 5px solid rgba(255, 255, 255, 0);
     text-align: center;
@@ -43,12 +43,26 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    box-shadow: 0 0 50px rgb(111, 239, 72);
+    box-shadow: 0 0 0px rgb(111, 239, 72);
     align-items: center;
     gap: 6px;
     padding: 12px 0px;
-    background: linear-gradient(rgb(0, 0, 0)) padding-box,conic-gradient(from var(--borderRotate), black, black,rgb(111, 239, 72),black) border-box;
-    animation: Rotate  10s infinite;
+    background: linear-gradient(rgb(0, 0, 0)) padding-box,conic-gradient(from var(--borderRotate), black,rgb(111, 239, 72),black) border-box;
+    animation: Rotate  3s infinite;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+    border-width: 0px;
+    transition: all 0.3s linear;
+    text-shadow: 0 0 0px rgb(111, 239, 72);
+    color: white;
+
+}
+.card:hover{
+    animation-play-state: running;
+    box-shadow: 0 0 50px rgb(111, 239, 72);
+    text-shadow: 0 0 20px rgb(111, 239, 72);
+    color: rgb(111, 239, 72);
+    border-width: 5px;
 }
 
 .card img{
